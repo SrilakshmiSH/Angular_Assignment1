@@ -1,0 +1,19 @@
+
+<h2>Admin: accepts new user details</h2>
+
+<div>
+  Enter username : <input type="text" [(ngModel)]="addUsername" />
+</div>
+<br>
+<div>
+  Enter email : <input type="text" [(ngModel)]="addEmail" />
+</div>
+<br>
+<div>
+  Enter phone number : <input type="text" [(ngModel)]="addPhoneNumber" />
+</div>
+<br><br>
+<div>
+  <input type="submit" style='font-weight: bold;' value="Add new user details" (click)="submitUserDetails()">
+</div>
+  

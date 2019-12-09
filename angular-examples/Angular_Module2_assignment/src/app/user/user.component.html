@@ -1,0 +1,16 @@
+
+<h2>User: request user details</h2>
+
+<div>
+  Enter username : <input [(ngModel)]="searchUsername" />
+  <br><br>
+    <button type="button" style='font-weight: bold;' (click)="handleButtonClick()">display user details</button> 
+</div>
+
+<div *ngIf="userinput">
+  <h2>Requested user details</h2>
+  <p>UserName: &nbsp;{{userinput.username}}</p>
+  <p>Email: &nbsp;{{userinput.email}}</p>
+  <p>Phone number: &nbsp;{{userinput.phoneNumber}}</p>
+</div>
+
